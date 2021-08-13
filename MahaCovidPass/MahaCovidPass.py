@@ -85,7 +85,6 @@ class covidPassBot:
 
         # 1. District 
         self.driver.find_elements_by_xpath('//*[@id="district"]')[0].click()
-        # District >> Nagpur (jaripatka)
         time.sleep(0.5)
         self.driver.find_elements_by_xpath('/html/body/div[1]/div[1]/div/div/div/form/div[1]/div/div[1]/div/div[1]/select/option[21]')[0].click()
 
@@ -186,7 +185,7 @@ if __name__ == '__main__':
     state =None
     how_many_passengers = None
 
-    usrDetails = { 'Nagpur' : "/html/body/div[1]/div[1]/div/div/div/form/div[1]/div/div[1]/div/div[1]/select/option[21]", "name":"Thakurdas Sachdev","current_address" : "Mukund Society jaripatka" ,"destination_address" : "Raipur" ,"mobile":9922922131,"purpose" :"Agricultural Visit", 'vehicle_number': 'MH 49 BB 0076',"passenger_count": 4,"email_ID" : "sandeshsachdev27@gmail.com","passenger_names" : "Sandesh Sachdev " }
+    usrDetails = { 'Nagpur' : "/html/body/div[1]/div[1]/div/div/div/form/div[1]/div/div[1]/div/div[1]/select/option[21]", "name":" xyz","current_address" : "asdfghjk" ,"destination_address" : "qwertyu" ,"mobile":123456789,"purpose" :"Agricultural Visit", 'vehicle_number': 'MH 49 BB 0076',"passenger_count": 4,"email_ID" : "sandeshsachdev27@gmail.com","passenger_names" : "Sandesh Sachdev " }
 
     web = covidPassBot()
 
